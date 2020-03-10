@@ -13,24 +13,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         RecyclerView recipes = findViewById(R.id.Recipe);
-        mAdapter = new RecyclerView.Adapter<CustomViewHolder>() {
-            @Override
-            public CustomViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-                View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.notice_snippet
-                        , viewGroup, false);
-                return new CustomViewHolder(view);
-            }
-
-            @Override
-            public void onBindViewHolder(CustomViewHolder viewHolder, int i) {
-                viewHolder.noticeSubject.setText(mItems.get(i));
-            }
-
-            @Override
-            public int getItemCount() {
-                return mItems.size();
-            }
-
-        };
     }
 }
