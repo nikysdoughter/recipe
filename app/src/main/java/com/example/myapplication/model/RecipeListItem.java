@@ -16,7 +16,7 @@ public class RecipeListItem {
 
     private static int lastRecipeId = 0;
 
-    public static ArrayList<RecipeListItem> createContactsList(int numContacts) {
+    public static ArrayList<RecipeListItem> createRecipeList(int numContacts) {
         ArrayList<RecipeListItem> recipes = new ArrayList<RecipeListItem>();
 
         for (int i = 1; i <= numContacts; i++) {
